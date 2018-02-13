@@ -1,3 +1,11 @@
+var phonegapReady = function() {
+    //   oStatus = document.getElementById("connectionStatus");
+    // oStatus.innerHTML = "Now connected to phonegap";
+    //oStatus.style.color = "green";
+}
+
+document.addEventListener("deviceready", phonegapReady, false);
+
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
@@ -22,6 +30,7 @@ angular.module('starter', ['ionic'])
         // The inline CSS rules are used to resize the image
         //
         smallImage.src = "data:image/jpeg;base64," + imageData;
+        console.log(smallImage.src);
     }
     var onFail = function(message) {
         alert('Failed because: ' + message);
