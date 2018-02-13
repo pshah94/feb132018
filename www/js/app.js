@@ -29,7 +29,7 @@ angular.module('starter', ['ionic'])
         // Show the captured photo
         // The inline CSS rules are used to resize the image
         //
-        smallImage.src = "data:image/jpeg;base64," + imageData;
+        smallImage.src = "" + imageData;
         console.log(smallImage.src);
     }
     var onFail = function(message) {
